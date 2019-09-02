@@ -1,2 +1,4 @@
 ---
-# tasks file for ansible_role_efibootmgr-hack
+
+- include_tasks: efibootmgr_hack.yml
+  when: ansible_system == 'Linux'
